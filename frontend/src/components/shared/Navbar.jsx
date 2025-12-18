@@ -9,12 +9,13 @@ import {
   Popover,
   PopoverTrigger,
   PopoverContent,
-} from "../ui/popover"; // fixed alias
+} from "../ui/popover";
 import { Button } from "../ui/button";
 import { Avatar, AvatarImage } from "../ui/avatar";
-import { setUser } from "../../redux/authSlice"; // fixed alias
+import { setUser } from "../../redux/authSlice";
 
-const USER_API_END_POINT = "https://job-portal-57fw.onrender.com/api/v1/user"; // moved directly here for clarity
+// ✅ Use your global constants file
+import { USER_API_END_POINT } from "../../utils/constant";
 
 const Navbar = () => {
   const { user } = useSelector((store) => store.auth);
@@ -37,6 +38,7 @@ const Navbar = () => {
       toast.error(error?.response?.data?.message || "Logout failed");
     }
   };
+
 
   return (
     <div className="bg-white">

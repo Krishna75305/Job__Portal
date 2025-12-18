@@ -12,7 +12,7 @@ import { Button } from "../ui/button";
 import { RadioGroup } from "../ui/radio-group";
 import { setLoading, setUser } from "../../redux/authSlice"; // fixed alias path for compatibility
 
-const USER_API_END_POINT = "https://job-portal-57fw.onrender.com/api/v1/user";
+import { USER_API_END_POINT } from "../../utils/constant";
 
 export const Login = () => {
   const { loading, user } = useSelector((store) => store.auth);

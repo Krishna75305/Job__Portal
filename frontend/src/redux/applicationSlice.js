@@ -20,7 +20,7 @@ export const { setAllApplicants } = applicationSlice.actions;
 // Optional async thunk (if needed later)
 export const fetchApplicants = () => async (dispatch) => {
   try {
-    const { data } = await axios.get("http://localhost:8000/api/application/get");
+    const { data } = await axios.get("http://localhost:5173/api/application/get");
     dispatch(setAllApplicants({ applications: data.applications }));
   } catch (err) {
     console.error("Failed to fetch applicants:", err.message);

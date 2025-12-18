@@ -12,7 +12,8 @@ import { Button } from "../ui/button";
 import { RadioGroup } from "../ui/radio-group";
 import { setLoading } from "../../redux/authSlice"; // Fixed alias path for Linux/Render
 
-const USER_API_END_POINT = "https://job-portal-57fw.onrender.com/api/v1/user";
+import { USER_API_END_POINT } from "../../utils/constant";
+
 
 export const Signup = () => {
   const [input, setInput] = useState({

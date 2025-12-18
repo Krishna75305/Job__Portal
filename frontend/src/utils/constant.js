@@ -1,6 +1,4 @@
-// src/utils/constant.js
-
-export const BASE_API = "https://job-portal-57fw.onrender.com/api/v1";
+export const BASE_API = "http://localhost:8000/api/v1";
 
 export const USER_API_END_POINT = `${BASE_API}/user`;
 export const JOB_API_END_POINT = `${BASE_API}/job`;
