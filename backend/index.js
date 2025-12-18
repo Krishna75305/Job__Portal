@@ -25,7 +25,7 @@ app.use(cookieParser());
 // ✅ FIXED CORS (WORKS FOR DEV + PROD)
 app.use(
   cors({
-    origin: true,       // allows same-origin + localhost frontend
+    origin:"https://job-portal-e01p.onrender.com",       // allows same-origin + localhost frontend
     credentials: true,  // allows cookies / JWT
   })
 );
